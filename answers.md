@@ -36,3 +36,34 @@
 #### Exercises:
 1. It's an octagon instead of a box.
 5. To add another BoxBug actor, I would first initialize the actor with BoxBug name = new Boxbug(), thencall the location of the bug with world.add(new Location(x, y), name);. I could also initialize the color with name.setColor(Color.COLOR);
+
+### Part 3
+#### Set 3
+1. public int firstRow
+2. False
+3. (4, 4)
+4. 135
+5. You tell it which direction to check in.
+#### Set 4
+1. Go down each row, checking the number of objects in each row until the bottom. Count every space, and subtract the previous value.
+2. boolean isValid(Location (10, 10))
+3. It initializes the methods for the classes to use because it's an interface. In the Bounded and unbounded grid classes
+4. No, because it is easier and simpler, as well as more easy to understand, using an ArrayList.
+#### Set 5
+1. Color, Location, and Direction
+2. The direction is 0 (north) and the color is red
+3. So that it could be accessed directly, and can change values of the attributes of the actors.
+4. No. No, it can only be removed once. Yes, it can. It will be initialized twice, with the same attributes.
+5. Use the turn() method twice.
+#### Set 6
+1. If the grid value is null, the method returns false.
+2. If there is a rock obstructing, it will return false and therefore move 45 degrees instead of moving.
+3. getGrid(); it initializes the grid
+4. getLocation() and getDirection(). These allow it to decide where it is and where the actor is facing to determine if it can move.
+5. neighbor; checks what the value of an actor next to it is.
+6. It removes itself from the grid.
+7. You could call getLocation multipe times instead, but that would make the code more wet.
+8. Because the code tells it to have the same color.
+9. Yes
+10. new flower, and putselfingrid
+11. 6 times. 
