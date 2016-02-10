@@ -35,4 +35,4 @@
 7. After the bug switches cardinal direction.
 #### Exercises:
 1. It's an octagon instead of a box.
-2. 
+5. To add another BoxBug actor, I would first initialize the actor with BoxBug name = new Boxbug(), thencall the location of the bug with world.add(new Location(x, y), name);. I could also initialize the color with name.setColor(Color.COLOR);
