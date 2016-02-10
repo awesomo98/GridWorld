@@ -18,13 +18,6 @@ public class ZBug extends Bug {
 		}
 	}
 	
-	public void zMove() {
-		while (steps < sideLength && canMove()) {
-			move();
-			steps++;
-		}
-	}
-	
 	public void turn3() {
 		turn();
 		turn();
@@ -39,12 +32,21 @@ public class ZBug extends Bug {
 	}
 	
 	public void act() {
-		faceEast();
-		zMove();
-		turn();
-		turn3();
-		zMove();
-		turn4();
-		zMove();
+		if ((canMove()) && (steps < (sideLength * 3))) {
+			faceEast();
+			zMove();
+			turn3();
+			zMove();
+			turn4();
+			turn();
+			zMove();
+		}
+	}
+	
+	public void zMove() {
+		for (int j = 0; j < sideLength; j++) {
+			move();
+			steps++;
+		}
 	}
 }
