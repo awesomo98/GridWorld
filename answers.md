@@ -67,3 +67,12 @@
 9. Yes
 10. new flower, and putselfingrid
 11. 6 times. 
+
+### Part 4
+#### Set 7
+1. act(), processActors(), selectMoveLocation, getMoveLocations, makeMove()
+2. Checking the grid, processActors, get MoveLocations, selectMoveLocation, makeMove
+3. No because if need be they can change attributes to the actors without changing the act method.
+4. removeSelfFromGrid(), check for a rock, and check for a critter
+5. processActors (initializes the ability to move), selectMoveLocation (Point to, or choose, where to critter will move to), and moveTo (actually perform the move action) (or getMoveLocation)?
+6. Because the actual method which controls the character is the actor method
