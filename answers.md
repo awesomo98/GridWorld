@@ -76,3 +76,11 @@
 4. removeSelfFromGrid(), check for a rock, and check for a critter
 5. processActors (initializes the ability to move), selectMoveLocation (Point to, or choose, where to critter will move to), and moveTo (actually perform the move action) (or getMoveLocation)?
 6. Because the actual method which controls the character is the actor method
+
+#### Set 8
+1. Because the ChameleonCritter class extends Critter, which has the act method, causing it to perform distinct actions.
+2. Because it overrides the makeMove method in the Critter class.
+3. Flower flower = new Flower(getColor()); flower.putSelfInGrid(gr, loc);
+4. Because it doesn't need to.
+5. Actor
+6. getGrid
