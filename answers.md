@@ -84,3 +84,12 @@
 4. Because it doesn't need to.
 5. Actor
 6. getGrid
+
+#### Set 9
+1. Because it doesn't need to process the actors any differently.
+2. It will always eat all the actors that are in front of it. If there is nothing to eat, it will move side to side.
+3. Because it needs to process multiple actors in multiple locations at once.
+4. (4,3), (4,4), and (4,5)
+5. A CrabCritter only moves side to side and eats the actors in front and diagonal to it. They both move, getActors, act; everything that is a part of Critter is simply extended by CrabCritter.
+6. It checks if it can make any moves, and if it can't then it turns.
+7. Because the source code for their class excludes them from items available to eat.
