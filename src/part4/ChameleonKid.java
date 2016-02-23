@@ -11,6 +11,15 @@ public class ChameleonKid extends ChameleonCritter {
 		int[] n = {Location.AHEAD, Location.HALF_CIRCLE};
 		for (Location loc : getLocationAt(n)) {
 			Actor a = getGrid().get(loc);
+			if (a != null) {
+				actors.add(a);
+			}
+			return actors;
 		}
 	}
+		public ArrayList<Location> getLocationAt() {
+			
+			
+		}
 }
+	

@@ -33,7 +33,7 @@ import java.util.ArrayList;
  */
 public class ChameleonCritter extends Critter {
 	
-	private static final double DARKENING_FACTOR = 0.05;
+	private static final double DARKENING = 0.05;
 	
 	/**
 	 * Randomly selects a neighbor and changes this critter's color to be the
@@ -53,9 +53,9 @@ public class ChameleonCritter extends Critter {
 	
 	private void darken() {
 		Color c = getColor();
-		int red = (int) (c.getRed() * (1 - DARKENING_FACTOR));
-		int green = (int) (c.getGreen() * (1 - DARKENING_FACTOR));
-		int blue = (int) (c.getBlue() * (1 - DARKENING_FACTOR));
+		int red = (int) (c.getRed() * (1 - DARKENING));
+		int green = (int) (c.getGreen() * (1 - DARKENING));
+		int blue = (int) (c.getBlue() * (1 - DARKENING));
 		
 		setColor(new Color(red, green, blue));
 	}
