@@ -13,7 +13,11 @@ public class BlusterCritter extends Critter {
 		ArrayList<Actor> twoNeighbor = new ArrayList<Actor>();
 		Location loc = getLocation();
 		int row = loc.getRow();
-		int column = loc.getCol();			
+		int column = loc.getCol();	
+		
+		for (row = -2; row < 3; row++) {
+			
+		}
 	}
 	
 	public void processActors(ArrayList<Actor> actors) {
@@ -26,6 +30,8 @@ public class BlusterCritter extends Critter {
 			
 			if (total >= courage) {
 				setColor(getColor().darker());
+			} else if (total < courage) {
+				setColor(getColor().brighter());
 			}
 		}
 	}
