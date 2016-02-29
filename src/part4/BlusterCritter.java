@@ -13,7 +13,9 @@ public class BlusterCritter extends Critter {
 		ArrayList<Actor> twoNeighbor = new ArrayList<Actor>();
 		Location loc = getLocation();
 		int row = loc.getRow();
-		int column = loc.getCol();	
+		int column = loc.getCol();
+		int c;
+		int courage = c;
 		
 		for (row = -2; row < 3; row++) {
 			

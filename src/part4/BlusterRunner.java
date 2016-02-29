@@ -15,7 +15,6 @@ public class BlusterRunner {
 		world.add(new Location(7, 8), new Flower());
 		world.add(new Location(4, 5), new Rock());
 		world.add(new Location(6, 3), new Critter());
-
 	}
 
 }
