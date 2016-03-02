@@ -8,13 +8,16 @@ import info.gridworld.grid.Grid;
 import info.gridworld.grid.Location;
 
 public class KingCrab extends CrabCritter {
-	public void processActors (ArrayList<Actor> actors) {
+	public void processActors(ArrayList<Actor> actors) {
 		Grid gr = getGrid();
 		for (Actor a : actors) {
-			Location loc = getLocation();
-			setDirection(getLocation().getDirectionToward(loc));
-			if (a instanceof Critter) {
-				a.moveTo(loc);
+			Location loc = a.getLocation();
+			int dir = getLocation().getDirectionToward(loc);
+			Location nextLoc = loc.getAdjacentLocation(dir);
+			if (gr.isValid(nextLoc) && gr.get(nextLoc) == null) {
+				a.moveTo(nextLoc);
+			} else {
+				a.removeSelfFromGrid();
 			}
 		}
 	}
